@@ -3,7 +3,7 @@
 Welcome to the **Responsive Web Design Template** — a modern, stylish, and fully responsive HTML5 + CSS3 + Bootstrap 5 template designed for web designers, developers, or anyone looking to showcase their work beautifully across all devices.
 
 ## 🌐 Live Preview
-> *(Add link to live version if hosted)*
+> *[(Website)](https://quantexadesigns.github.io/DivyS/?fbclid=PAZXh0bgNhZW0CMTEAAactzknR5boQg7-9tiMqVBSVuvZKnD0vvYrvZrmDLyrzoKYEzMKsBhsX5SdtAw_aem_WN_rCtF62lJGT84RnnxZPA)*
 
 ## ✨ Features
 - ⚡ Fast and lightweight HTML template
