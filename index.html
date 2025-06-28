@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Design | Web Design</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Modern, responsive web design by Divy S. featuring creative layouts and user-friendly interfaces.">
+    <meta name="keywords"
+        content="responsive web design, HTML CSS website, Bootstrap 5 template, web designer portfolio, Divy S, custom website design, user experience, mobile friendly websites">
+    <meta name="author" content="Divy S">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Responsive Web Design by Divy S">
+    <meta property="og:description"
+        content="Creative and responsive web templates by Divy S – optimized for all screen sizes.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="path-to-thumbnail.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@400..900&family=Poppins:wght@300;400;600;700&family=Roboto:wght@100..900&family=Teko:wght@300..700&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .dark {
+            background-color: black;
+            color: white;
+            width: 100%;
+            padding: 80px 15px 30px;
+        }
+
+        .brand-name {
+            color: white;
+            font-size: 24px;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 100%;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .video-section,
+        .content {
+            flex: 1 1 400px;
+            max-width: 600px;
+            padding: 10px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .content {
+            color: white;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                padding-top: 100px;
+            }
+
+            .video-section,
+            .content {
+                text-align: center;
+                max-width: 100%;
+            }
+        }
+
+        .light {
+            background-color: #d0d5e0;
+            color: black;
+            width: 100%;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .welcome {
+            font-size: 20px;
+            letter-spacing: 9px;
+            font-weight: 850;
+        }
+
+        .brand-name2 {
+            font-size: 8vw;
+            font-weight: 50;
+            letter-spacing: 4px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .template {
+            font-size: 4vw;
+            word-spacing: 10px;
+            letter-spacing: 2px;
+        }
+
+        .button1 {
+            background-color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .link1 {
+            text-decoration: none;
+            color: #623e2a;
+            font-weight: 600;
+            font-size: small;
+            letter-spacing: 4px;
+        }
+
+        .orange {
+            padding: 40px 20px;
+            background-color: #ff4d00;
+            color: black;
+            min-height: 100vh;
+        }
+
+        .heading1 {
+            text-align: center;
+            font-size: 8vw;
+            font-weight: 500;
+            font-family: 'Teko', sans-serif;
+            word-spacing: 7px;
+        }
+
+        .work-card {
+            flex: 1 1 300px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .image1-pexels {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            object-fit: cover;
+            margin: 0 auto 10px;
+            display: block;
+        }
+
+        .sub-head1,
+        .sub-head2,
+        .sub-head3 {
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Teko', sans-serif;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+
+        .button2,
+        .button3,
+        .button4 {
+            background-color: transparent;
+            border: 3px solid black;
+            color: black;
+            cursor: pointer;
+            font-weight: 500;
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .last {
+            background-color: #bde6f5;
+            color: black;
+            width: 100%;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .main {
+            font-size: 8vw;
+            font-weight: 200;
+            letter-spacing: 2px;
+            font-family: 'sans-serif';
+            word-spacing: 4px;
+            margin-bottom: 30px;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 30px 0;
+        }
+
+        @media (max-width: 576px) {
+            .contact-row {
+                gap: 20px;
+            }
+        }
+
+        .contact-block {
+            flex: 1 1 200px;
+        }
+
+        .socials {
+            font-size: 25px;
+            font-weight: 650;
+            margin-bottom: 8px;
+        }
+
+        .account1,
+        .account2,
+        .account3 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .line {
+            width: 90%;
+            margin: 20px auto;
+            border: 2px solid #ff3b4b;
+        }
+
+        .last-heading {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .link2 {
+            text-decoration: underline;
+            color: black;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dark">
+        <h3 class="brand-name">DIVY S.</h3>
+        <div class="main-content">
+            <div class="video-section">
+                <video src="ani4.mp4" autoplay loop muted></video>
+            </div>
+            <div class="content">
+                <p class="first" style="font-family: 'Roboto'; font-weight: 350;"> Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.<br> Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco.<br> Duis aute irure dolor in
+                    reprehenderit in voluptate velit.<br> Excepteur sint occaecat cupidatat non proident. </p>
+                <p class="second" style="font-family: 'Roboto'; font-weight: 250; font-size: 15px;"> Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit.<br> Sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco.<br> Duis aute irure
+                    dolor in reprehenderit in voluptate velit.<br> Excepteur sint occaecat cupidatat non proident. </p>
+            </div>
+        </div>
+    </div>
+    <div class="light">
+        <h6 class="welcome" style="font-family: 'telegraf';">WELCOME TO</h6>
+        <h1 class="brand-name2" style="font-family: 'Playfair' ">DIVY S.</h1>
+        <h2 class="template" style="font-family: 'Playfair';">Website Template</h2> <button type="button"
+            class="button1" style="font-family: 'Montserrat';"><a href="#" class="link1">LEARN MORE</a></button>
+    </div>
+    <div class="orange">
+        <h1 class="heading1">Piece of work</h1>
+        <div class="d-flex justify-content-center gap-4 flex-wrap text-center"> <!-- Card 1 -->
+            <div class="work-card">
+                <h6 class="sub-head1">BRANDING AND IDENTITY</h6> <img src="pexels-pixabay-39284 (1).jpg" alt="image1"
+                    class="image1-pexels"> <button type="button" class="button2">View</button>
+            </div> <!-- Card 2 -->
+            <div class="work-card">
+                <h6 class="sub-head2">WEB AND DIGITAL DESIGN</h6> <img src="pexels-pixabay-39578 (1).jpg" alt="image2"
+                    class="image1-pexels"> <button type="button" class="button3">View</button>
+            </div> <!-- Card 3 -->
+            <div class="work-card">
+                <h6 class="sub-head3">PACKAGING</h6> <img src="pexels-siddharth-19257047.jpg" alt="image3"
+                    class="image1-pexels"> <button type="button" class="button4">View</button>
+            </div>
+        </div>
+    </div>
+    <a id="top"></a>
+    <div class="last">
+        <h1 class="main">Let's work together!</h1>
+        <div class="contact-row">
+            <div class="contact-block">
+                <h6 class="socials">Socials</h6>
+                <h4 class="account1">@template</h4>
+            </div>
+            <div class="contact-block">
+                <h6 class="socials">Email</h6>
+                <h4 class="account2">template@gmail.com</h4>
+            </div>
+            <div class="contact-block">
+                <h6 class="socials">Phone</h6>
+                <h4 class="account3">+91 8887665XXX</h4>
+            </div>
+        </div>
+        <hr class="line">
+        <div>
+            <i class="fa-solid fa-globe" style="padding-right: 50px;"></i>
+            <i class="fa-solid fa-camera"></i>
+            <i class="fa-solid fa-arrow-up" style="display: block; margin: 20px auto 10px;"></i>
+            <h6 class="last-heading"><a href="#" class="link2">Back to top</a></h6>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/84b3eb6e26.js" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
